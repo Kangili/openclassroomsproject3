@@ -1,34 +1,105 @@
 
-/* Section "entrées" */
-.entrées {
-
+.menu {
+    padding: 20px;
+    border-radius: 50px 50px 0 0;
+    margin-top: -60px;
+    z-index: 1;
+    position: relative;
+    background-color: #f6f6f6;
+  
+    &_img {
+      max-width: 100%;
+      max-height: 32rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  
     &_title {
+      font-family: "Shrikhand", "cursive";
+      flex: 1;
+    }
+  
+    &_header {
+      display: flex;
+      align-items: center;
+    }
+  
+    &_card {
+      display: flex;
+      background-color: white;
+      padding: 15px;
+      border-radius: 15px;
+  
+      p {
+        display: flex;
+        align-items: end;
+        margin: 0;
+      }
+  
+      h4 {
+        margin: 0;
+      }
+  
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+      }
+    }
+  
+    &_entrees {
+  
+      &_title {
+        text-transform: uppercase;
+        font-weight: normal;
+  
+        &::after {
+          content: "";
+          display: block;
+          width: 10%;
+          height: 4px;
+          background-color: #99E2D0;
+          margin-top: 5px;
+
+        
+        }
+      }
     }
 
-    &_text {
-    }
 
-    &_cards {
-        background-color: white;
-    }
-}
+    &_plats {
 
-/* Section "plats" */
-.plats {
+      &_title {
+        text-transform: uppercase;
+        font-weight: normal;
+  
+        &::after {
+          content: "";
+          display: block;
+          width: 10%;
+          height: 4px;
+          background-color: #99E2D0;
+          margin-top: 5px;
+        }
+      }     
+  }
 
+  &_desserts {
     &_title {
-    }
+      text-transform: uppercase;
+      font-weight: normal;
 
-    &_text {
-    }
-}
+      &::after {
+        content: "";
+        display: block;
+        width: 10%;
+        height: 4px;
+        background-color: #99E2D0;
+        margin-top: 5px;
 
-/* Section "desserts" */
-.desserts {
-
-    &_title {
+    
     }
-
-    &_text {
-    }
+  }
+    
 }
