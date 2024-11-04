@@ -335,7 +335,31 @@ body {
   background-color: rgb(42, 39, 39);
   font-weight: bold;
   color: white;
-  padding-left: 30px;
+  padding: 20px;
+}
+@media (min-width: 1024px) {
+  .footerlist {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+  }
+  .footerlist .item-1 {
+    order: 4;
+  }
+  .footerlist .item-2 {
+    order: 3;
+  }
+  .footerlist .item-3 {
+    order: 2;
+  }
+  .footerlist .item-4 {
+    order: 1;
+  }
+}
+
+footer p {
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
