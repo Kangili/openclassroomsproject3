@@ -258,9 +258,9 @@ body {
 /* Section "Footer" */
 .footerlist {
   background-color: rgb(42, 39, 39);
-  font-weight: bold;
   color: white;
   padding: 20px;
+  gap: 30px;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -289,4 +289,19 @@ body {
 
 footer p {
   margin: 10px 0;
+}
+
+.footerfood {
+  font-family: "Shrikhand", "cursive";
+
+}
+
+.footerrestaurant{
+  display: flex;
+  gap : 5px;
+}
+
+.footerreverse{
+  display: flex;
+  gap: 30px;
 }
