@@ -378,4 +378,10 @@ footer p {
 .footerreverse {
   display: flex;
   gap: 30px;
+}
+
+.footerespace {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }/*# sourceMappingURL=style.css.map */
