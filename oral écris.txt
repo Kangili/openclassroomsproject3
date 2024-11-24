@@ -1,0 +1,22 @@
+Pojet 4 
+
+Je vais vous présentez mon projet 4 améliorez l'interface d'un site mobile avec des animations css.
+Je vais vous présentez le site internet en tant que développeur junior.
+Pour ce fait j'ai intégré l'interface du site avec du code HTML ET CSS.
+J'ai découpé le projet en 5 parties :
+- header
+- section
+- footer
+
+Vous avez la balise header dans la balise header vous avez le logo
+Dans la balise section food vous avez réservez le menu
+Dans la balise section fonctionnement
+Dans la balise section restaurants 
+
+
+pour réaliser l'animation du coeur (div=restaurant icon) j'ai utilisé font awesome coeur regular et coeur solid
+
+id = réutilisable une seule fois et une class = engloble plusieurs éléments
+
+définition : 
+La propriété animation-delay définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément.
