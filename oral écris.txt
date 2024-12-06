@@ -2,8 +2,8 @@ Pojet 4
 
 Je vais vous présentez mon projet 4 améliorez l'interface d'un site mobile avec des animations css.
 Je vais vous présentez le site internet en tant que développeur junior.
-Pour ce fait j'ai intégré l'interface du site avec du code HTML ET CSS.
-J'ai découpé le projet en 5 parties :
+Ma mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
+Pour ce fait j'ai découpé le projet en 3 parties :
 - header
 - section
 - footer
