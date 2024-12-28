@@ -331,19 +331,14 @@ body {
   padding: 20px;
   background-color: #f6f6f6;
 }
-.restaurant h2 {
-  margin: 20px auto;
-}
 @media (min-width: 1024px) {
   .restaurant h2 {
     max-width: 90%;
-    margin: 20px auto;
   }
 }
 @media (min-width: 1440px) {
   .restaurant h2 {
     max-width: 61%;
-    margin: 20px auto;
   }
 }
 .restaurant_cards {
@@ -379,7 +374,9 @@ body {
   background-color: #99E2D0;
   width: 80px;
   height: 32px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 16px;
   top: 16px;
   color: #278870;
@@ -409,11 +406,10 @@ body {
   font-weight: 300;
 }
 .restaurant_icons {
-  background: black;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
   position: relative;
+}
+.restaurant_icons i {
+  position: absolute;
 }
 .restaurant_cards-size {
   width: 100%;
@@ -424,12 +420,24 @@ body {
      object-fit: cover;
 }
 
+.my-heart-full {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.my-heart-empty {
+  transition-property: all;
+  transition-duration: 2s;
+}
+
 .my-heart-full:hover {
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  opacity: 1;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
-          background-clip: text;
   color: transparent;
-  margin-left: auto;
+  transition-property: all;
 }
 
 /* Section "Footer" */

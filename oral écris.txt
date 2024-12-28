@@ -20,3 +20,13 @@ id = réutilisable une seule fois et une class = engloble plusieurs éléments
 
 définition : 
 La propriété animation-delay définit la durée d'attente avant de démarrer une animation une fois qu'elle a été appliquée à un élément.
+
+&_item_wrapIcon  bodaer raduis définir le fond rond 
+&_item_confirmation
+&_item_wrapIcon  radius défébir le fond rond
+
+class loader centrer les points au milieu du centre
+
+my-heart-full"
+
+présenter le site 
