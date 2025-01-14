@@ -153,11 +153,13 @@ body {
   h2 {
 
     @media (min-width: 1024px) {
-      max-width: 90%;
+      max-width: 93%;
+      margin: auto;
     }
 
     @media (min-width: 1440px) {
       max-width: 61%;
+      margin: auto;
     }
 
   }
@@ -232,6 +234,17 @@ body {
 
   &_icons {
     position: relative;
+    height: 12px;
+
+    // On masque l'icône vide au survol :
+    &:hover .my-heart-empty {
+      opacity: 0; // L'icône vide disparaît progressivement
+    }
+
+    &:hover .my-heart-full {
+      opacity: 1; // Le dégradé du cœur apparaît progressivement
+    }
+
     i{
       position: absolute;
     }
@@ -248,27 +261,26 @@ body {
 
 
 
-.my-heart-full{
- opacity: 0;
- transition-property: all;
- transition-duration: 2s;
+.my-heart-full {
+  opacity: 0; // Par défaut, le cœur avec le dégradé est invisible
+  transition: opacity 1s; // Animation de la transition de l'opacité
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; // Assure que seul le dégradé est visible
 }
 
-.my-heart-empty{
-  transition-property: all;
-  transition-duration: 2s;
- }
- 
+.my-heart-empty {
+  transition: opacity 1s; // Ajout de la transition pour que le vide disparaisse progressivement
+}
 
 .my-heart-full:hover {
-  opacity: 1;
+  opacity: 1; // Change l'opacité au survol
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition-property: all;
 }
-
 
 /* Section "Footer" */
 .footerlist {

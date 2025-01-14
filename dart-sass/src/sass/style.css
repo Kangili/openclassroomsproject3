@@ -35,8 +35,7 @@
   max-width: 100%;
   max-height: 32rem;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .menu_title {
   font-family: "Shrikhand", "cursive";
@@ -333,12 +332,14 @@ body {
 }
 @media (min-width: 1024px) {
   .restaurant h2 {
-    max-width: 90%;
+    max-width: 93%;
+    margin: auto;
   }
 }
 @media (min-width: 1440px) {
   .restaurant h2 {
     max-width: 61%;
+    margin: auto;
   }
 }
 .restaurant_cards {
@@ -407,6 +408,13 @@ body {
 }
 .restaurant_icons {
   position: relative;
+  height: 12px;
+}
+.restaurant_icons:hover .my-heart-empty {
+  opacity: 0;
+}
+.restaurant_icons:hover .my-heart-full {
+  opacity: 1;
 }
 .restaurant_icons i {
   position: absolute;
@@ -416,19 +424,20 @@ body {
   height: 200px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .my-heart-full {
   opacity: 0;
-  transition-property: all;
-  transition-duration: 2s;
+  transition: opacity 1s;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .my-heart-empty {
-  transition-property: all;
-  transition-duration: 2s;
+  transition: opacity 1s;
 }
 
 .my-heart-full:hover {
@@ -437,7 +446,6 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition-property: all;
 }
 
 /* Section "Footer" */
@@ -534,4 +542,6 @@ footer p {
 a {
   text-decoration: none;
   color: black;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
