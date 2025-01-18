@@ -287,8 +287,12 @@ body {
   background-color: rgb(42, 39, 39);
   color: white;
   padding: 20px;
-  gap: 30px;
+  gap: 50px;
 
+  .reverseElements {
+    display: flex;
+    gap: 20px;
+  }
   @media (min-width: 1024px) {
     display: flex;
     flex-direction: row-reverse;
